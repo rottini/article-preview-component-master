@@ -10,7 +10,7 @@
 
 ### Screenshot
 
-![](./design/screenshot-1.JPG)
+![](./design/desktop-screen.JPG)
 
 ### Screenshot
 
