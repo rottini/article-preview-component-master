@@ -1,0 +1,214 @@
+    .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+    }
+
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+
+    body {
+        margin: 0 auto;
+        padding: 0;
+        font-size: 13px;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 500;
+        background-color: var(--light-grayish-blue);
+    }
+    
+    h1 {
+        margin: 0;
+        color: var(--very-dark-grayish-blue);
+        font-weight: 700;
+        
+    }
+
+    p {
+        color: var(--desaturated-dark-blue);
+        font-weight: 500;
+        line-height: 1.2rem;
+        letter-spacing: 1px;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        justify-content: center;
+        padding-left: 3%;
+    }
+
+    :root {
+        --very-dark-grayish-blue: hsl(217, 19%, 35%);
+        --desaturated-dark-blue: hsl(214, 17%, 51%);
+        --grayish-blue: hsl(212, 23%, 69%);
+        --light-grayish-blue: hsl(210, 46%, 95%);
+    }
+
+    .main_box {
+        border-radius: 10px;
+        display: flex;
+        margin: 10% auto;
+        background-color: white;
+        width: 60%;
+    }
+
+    .left_box {
+        background: url("images/drawers.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 10px 0px 0px 10px;
+        width: 40%;
+    }
+
+    .right_box {
+        width: 65%;
+        padding: 3% 5% 3% 5%;
+        position: relative;
+    }
+
+    .avatar_box {
+        display: flex;
+        align-items: center;
+    }
+
+    .avatar_img {
+        width: 10%;
+        border-radius: 100px;
+    }
+
+    .name {
+        color: var(--very-dark-grayish-blue);
+        font-weight: 700;
+    }
+
+    .data {
+        color: var(--desaturated-dark-blue);
+    }
+
+    .button_box {
+        position: relative;
+        margin-left: auto;
+    }
+
+    #share_button {
+        border: none;
+        margin-left: auto;
+        border-radius: 100px;
+        height: 30px;
+        width: 30px;
+    }
+
+    .share_button {
+        background-color: var(--desaturated-dark-blue);
+    }
+
+    .share_button img {
+        filter: brightness(100);
+    }
+
+    #mensage_box {
+        background-color: var(--very-dark-grayish-blue);
+        position: absolute;
+        border-radius: 10px;
+        height: 50px;
+        width: 230px;
+        display: block;
+        margin-left: -110px;
+        margin-top: -100px;
+    }
+
+    #mensage_box:after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid var(--very-dark-grayish-blue);
+        bottom: -10px;
+        left: 50%;
+    }
+    
+
+    #mensage_box ul {
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        padding: 5%;
+    }
+
+    #mensage_box li {
+        padding: 1% 3%;
+    }
+
+    .share_text {
+        letter-spacing: 5px;
+        color: var(--grayish-blue);
+        font-weight: 500;
+    }
+
+    @media (max-width:800px) {
+
+        .main_box {
+        display: block;
+        margin: 4% auto;
+        width: auto;
+    }
+        
+    .left_box {
+        background: url("images/drawers.jpg");
+        background-position:center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        border-radius: 10px 0px 0px 10px;
+        height: 230px;
+        width: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .right_box {
+        width: auto;
+        padding: 3% 5% 3% 5%;
+        
+    }
+    .right_box h1 {
+        padding: 5% 4% 3% 4%;
+        font-size: large;
+    }
+
+    .right_box p {
+        padding: 0 4%;
+    }
+
+    .avatar_box {
+        background-color: var(--very-dark-grayish-blue);
+        display: flex;
+        align-items: center;
+    }
+    
+    #mensage_box {
+        background-color: var(--very-dark-grayish-blue);
+        position: absolute;
+        border-radius: 0px;
+        height: 36px;
+        width: 250px;
+        display: flex;
+        margin-left: -310px;
+        margin-top: -33px;
+
+    }
+
+    #mensage_box ul {
+        padding-top: 2%;
+    }
+    #mensage_box:after {
+        content: none;
+    }
+    
+    .name {
+        color: var(--light-grayish-blue);
+    }
+     
+    }
